@@ -5,13 +5,13 @@
 }
 
 :root {
-    --color-light: #f4f4f4;
-    --color-gray-700: #333333;
-    --color-gray-800: #1f1f1f;
-    --color-gray-900: #141414;
-    --color-green-300: #c5f82a;
+    --color-light: #ffffff;
+    --color-gray-700: #002706;
+    --color-gray-800: #5a5a5a;
+    --color-gray-900: #020204;
+    --color-green: #00FF41;
     --radius-circle: 50%;
-    --font-family: "Roboto Mono", monospace;
+    --font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -24,9 +24,6 @@ div {
     color: var(--color-light);
     text-align: center;
     width: 50%;
-    /* margin: 20px 40px 60px 100px; */
-    /* margin-block: 30px; eixo Y */
-    /* margin-inline: auto; eixo X */
     margin: 30px auto;
     padding-block: 20px;
     border-radius: 15px;
@@ -34,22 +31,22 @@ div {
 }
 
 img {
-    width: 100px;
-    /* height: 100px; */
+    width: 175px;
+    height: 175px;
     border-radius: var(--radius-circle);
-    /* object-fit: cover; */
-    border: 5px inset var(--color-light);
+    object-fit: cover;
+    border: 2px solid var(--color-light);
     transition: .7s;
 
     &:hover {
-        border-color: var(--color-green-300);
+        border-color: var(--color-green);
         scale: 1.1;
     }
 }
 
 h1 {
     font-size: 40px;
-    color:var(--color-green-300);
+    color:var(--color-green);
     margin-block: 10px;
 }
 
@@ -88,15 +85,20 @@ a {
     padding-block: 16px;
     transition: .5s;
     border-radius: 15px;
+
+    &:active {
+        color: var(--color-green);
+    }
 }
 
-a:hover {
-    background-color: var(--color-green-300);
-    color: var(--color-gray-900);
-    letter-spacing: 2px;
-    font-size: 20px;
+#github:hover {
+    background-color: #24262a;
 }
 
-a:active {
-    color: var(--color-gray-900);
+#instagram:hover {
+    background: linear-gradient(72.44deg,#ff7a00 11.92%,#ff0169 51.56%,#d300c5 85.69%);
+}
+
+#linkedin:hover {
+    background-color: #0e76a8;
 }
