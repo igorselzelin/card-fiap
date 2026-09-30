@@ -30,6 +30,7 @@ div {
     margin: 30px auto;
     padding-block: 20px;
     border-radius: 15px;
+    min-width: 500px;
 }
 
 img {
@@ -66,6 +67,14 @@ p {
     text-wrap: balance;
 }
 
+li {
+    background-color: var(--color-gray-900);
+    margin-block: 16px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 15px;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -75,12 +84,19 @@ a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
+    display: block;
+    padding-block: 16px;
+    transition: .5s;
+    border-radius: 15px;
 }
 
 a:hover {
-    color: var(--color-green-300);
+    background-color: var(--color-green-300);
+    color: var(--color-gray-900);
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
 a:active {
-    color: #0000ff;
+    color: var(--color-gray-900);
 }
